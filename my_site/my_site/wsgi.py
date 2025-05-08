@@ -12,5 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_site.settings')
-
+from django.conf import settings
+from django.conf.urls.static import static
 application = get_wsgi_application()
